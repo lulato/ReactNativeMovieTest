@@ -104,7 +104,7 @@ var styles = StyleSheet.create({
     flex: 1,
   },
   title: {
-    fontSize: 20,
+    fontSize: 18,
     marginBottom: 8,
     textAlign: 'center',
   },
