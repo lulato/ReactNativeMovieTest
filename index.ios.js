@@ -22,7 +22,6 @@ var REQUEST_URL = API_URL + PARAMS;
 
 
 var AwesomeProject = React.createClass({
-
   getInitialState: function() {
     return {
       dataSource: new ListView.DataSource({
@@ -31,7 +30,6 @@ var AwesomeProject = React.createClass({
       loaded: false,
     };
   },
-
 
   componentDidMount: function() {
     this.fetchData();
@@ -48,7 +46,6 @@ var AwesomeProject = React.createClass({
       })
       .done();
   },
-
 
   render: function() {
     if (!this.state.loaded) {
@@ -87,10 +84,8 @@ var AwesomeProject = React.createClass({
         </View>
       </View>
     );
-  }
+  },
 });
-
-
 
 
 var styles = StyleSheet.create({
@@ -99,7 +94,7 @@ var styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: 'yellow',
   },
   thumbnail: {
     width: 53,
@@ -119,9 +114,8 @@ var styles = StyleSheet.create({
 
   listView: {
     paddingTop: 20,
-    backgroundColor: '#F5FCFF',
+    backgroundColor: 'red',
   },
-
 
 });
 
